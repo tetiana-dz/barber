@@ -1,0 +1,24 @@
+.hero {
+  background: $semi-black;
+
+  @include medium {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+  @include medium {
+    order: 2;
+    padding: 35px 0 250px 0;
+    background: #000;
+  }
+}
+
+.logo__link {
+  display: inline-block;
+}

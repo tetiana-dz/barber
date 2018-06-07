@@ -1,0 +1,88 @@
+
+.nav {
+  position: fixed;
+  background: $brown;
+  right: 0;
+  top: 67px;
+  height: calc(100vh - 67px);
+  width: 250px;
+  transform: translateX(100%);
+  transition: transform .2s ease-in-out;
+
+  @include medium {
+    position: static;
+    height: auto;
+    background: none;
+    width: 100%;
+    transform: translateX(0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu-btn-checkbox:checked ~ .nav {
+  transform: translateX(0);
+}
+
+.nav__list {
+  background: $semi-brown;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include medium {
+    background: none;
+    display: flex;
+  }
+}
+
+.nav__item {
+  &:not(:first-child) {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+
+    @include medium {
+     border: none;
+    }
+  }
+  &:not(:last-child) {
+    border-bottom: 1px solid $brown;
+    @include medium {
+      border: none;
+     }
+  }
+}
+
+.nav__link {
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  @include rem(18);
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+.login-btn {
+  padding: 0;
+  background: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  border: none;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.login-btn__img {
+  opacity: .5;
+}
+
+.login-btn__title {
+  @include rem(18);
+  margin-left: 15px;
+
+  @include medium {
+    display: none;
+  }
+}

@@ -1,0 +1,36 @@
+@mixin small {
+  @media screen and (min-width: 451px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin container {
+  padding: 0 15px;
+  width: 100%;
+
+  @include medium {
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  @include large {
+    width: 990px;
+  }
+}
+
+@mixin rem($size) {
+  font-size: $size / $basic-font-size + rem;
+  line-height: 1;
+}
