@@ -1,10 +1,10 @@
 <header class="header">
   <div class="inner-header">
-    <span class="header__page-title">Главная</span>
+    <span class="header__page-title">{{ pageTitle }}</span>
   
     <input type="checkbox" id="menu-btn" class="menu-btn-checkbox">
     <label for="menu-btn" class="menu-btn-label">
-      <i class="fas fa-bars"></i>
+      <img src="img/menu-icon.svg">
     </label>
 
     {% include 'layout/nav.html' %}

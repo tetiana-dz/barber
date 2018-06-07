@@ -19,12 +19,12 @@
 }
 
 .header__page-title {
-  margin: 14px 0;
+  margin: 16px 0;
   text-transform: uppercase;
   @include rem(18);
   color: #fff;
   font-family: 'PT Sans Bold', sans-serif;
-
+  transform: translateY(1px);
   @include medium {
     display: none;
   }
@@ -38,7 +38,7 @@
   background: $semi-brown;
   color: #fff;
   font-size: 25px;
-  padding: 10px 22px;
+  padding: 16px 22px 15px 22px;
   display: flex;
   justify-content: center;
   align-items: center;

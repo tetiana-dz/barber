@@ -16,24 +16,42 @@
   <div class="hero">
   <div class="logo">
     <a href="index.html" class="logo__link">
-      <img src="img/logo.svg" alt="barbershop">
+
+      <picture>
+        <source media="(min-width: 992px)" srcset="img/logo-desktop.png">
+        <img src="img/logo.svg" alt="barbershop">
+      </picture>
+
     </a>
   </div>
 
   <header class="header">
   <div class="inner-header">
-    <span class="header__page-title">Главная</span>
+    <span class="header__page-title"></span>
   
     <input type="checkbox" id="menu-btn" class="menu-btn-checkbox">
     <label for="menu-btn" class="menu-btn-label">
-      <i class="fas fa-bars"></i>
+      <img src="img/menu-icon.svg">
     </label>
 
-    <nav class="nav">
+    
+
+
+<nav class="nav">
   <ul class="nav__list">
-    <li class="nav__item"><a href="#" class="nav__link">First</a></li>
-    <li class="nav__item"><a href="#" class="nav__link">Second</a></li>
-    <li class="nav__item"><a href="#" class="nav__link">Third</a></li>
+    
+      <li class="nav__item">
+        <a href="index.html" class="nav__link">Главная</a>
+      </li>
+    
+      <li class="nav__item">
+        <a href="works.html" class="nav__link">Наши работы</a>
+      </li>
+    
+      <li class="nav__item">
+        <a href="form.html" class="nav__link">Записаться</a>
+      </li>
+    
   </ul>
 
   <button class="login-btn">

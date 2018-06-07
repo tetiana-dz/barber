@@ -38,28 +38,68 @@
 }
 
 .nav__item {
+  display: flex;
+  line-height: 1;
   &:not(:first-child) {
     border-top: 1px solid rgba(255, 255, 255, .1);
 
     @include medium {
      border: none;
+     margin-left: 30px;
     }
   }
+
   &:not(:last-child) {
     border-bottom: 1px solid $brown;
     @include medium {
       border: none;
      }
   }
+
+  @include medium {
+    &:first-child .nav__link {
+      padding-left: 0;
+    }
+  }
 }
 
 .nav__link {
   display: block;
   text-transform: uppercase;
+  font-family: 'PT Sans Bold', sans-serif;
+  line-height: .8;
   color: #fff;
   @include rem(18);
   text-decoration: none;
   padding: 15px 20px;
+
+  @include medium {
+    padding: 28px 0;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 3px;
+      background: $brown;
+      transform: translateX(-50%);
+      transition: width .2s ease-in-out;
+    }
+
+    &:active:after {
+      width: 100%;
+    }
+  }
+
+  @include large {
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
 }
 
 .login-btn {
@@ -72,6 +112,10 @@
   color: #fff;
   margin-top: 10px;
   margin-left: 20px;
+
+  @include medium {
+    margin: 0;
+  }
 }
 
 .login-btn__img {
@@ -81,8 +125,13 @@
 .login-btn__title {
   @include rem(18);
   margin-left: 15px;
+  text-transform: uppercase;
+  @include font(bold);
 
   @include medium {
     display: none;
+  }
+  @include large {
+    display: block;
   }
 }

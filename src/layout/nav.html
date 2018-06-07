@@ -1,8 +1,19 @@
+{%
+  set navItems = [
+    { title: 'Главная', path: 'index.html' },
+    { title: 'Наши работы', path: 'works.html' },
+    { title: 'Записаться', path: 'form.html' }
+  ]  
+%}
+
+
 <nav class="nav">
   <ul class="nav__list">
-    <li class="nav__item"><a href="#" class="nav__link">First</a></li>
-    <li class="nav__item"><a href="#" class="nav__link">Second</a></li>
-    <li class="nav__item"><a href="#" class="nav__link">Third</a></li>
+    {% for item in navItems %}
+      <li class="nav__item">
+        <a href="{{ item.path }}" class="nav__link">{{ item.title }}</a>
+      </li>
+    {% endfor %}
   </ul>
 
   <button class="login-btn">

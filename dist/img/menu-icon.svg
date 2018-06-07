@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 19" width="36" height="19">
+	<defs>
+		<image width="36" height="20" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAyMCIgd2lkdGg9IjM2IiBoZWlnaHQ9IjIwIj4KCTxzdHlsZT4KCQl0c3BhbiB7IHdoaXRlLXNwYWNlOnByZSB9CgkJLnNocDAgeyBmaWxsOiAjZmZmZmZmIH0gCgk8L3N0eWxlPgoJPGcgaWQ9IlBhZ2UgMSI+CgkJPHBhdGggaWQ9IlBhdGggMSIgY2xhc3M9InNocDAiIGQ9Ik0wLDEwLjAyYzAsMC41NCAwLjUxLDAuOTggMS4xMywwLjk4aDMzLjY3YzAuNjIsMCAxLjEzLC0wLjQ0IDEuMTMsLTAuOThjMCwtMC41NCAtMC41MSwtMC45OCAtMS4xMywtMC45OGgtMzMuNjZjLTAuNjIsMCAtMS4xMywwLjQ0IC0xLjEzLDAuOTh6TTEuMTMsMGMtMC42MiwwIC0xLjEzLDAuNDQgLTEuMTMsMC45OGMwLDAuNTQgMC41MSwwLjk4IDEuMTMsMC45OGgzMy42N2MwLjYyLDAgMS4xMywtMC40NCAxLjEzLC0wLjk4YzAsLTAuNTQgLTAuNTEsLTAuOTggLTEuMTMsLTAuOTh6TTAsMTguOTdjMCwwLjU0IDAuNTEsMC45OCAxLjEzLDAuOThoMzMuNjdjMC42MiwwIDEuMTMsLTAuNDQgMS4xMywtMC45OGMwLC0wLjU0IC0wLjUxLC0wLjk4IC0xLjEzLC0wLjk4aC0zMy42NmMtMC42MiwwIC0xLjEzLDAuNDQgLTEuMTMsMC45OHoiIC8+Cgk8L2c+Cjwvc3ZnPg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="menu-icon.svg" href="#img1" transform="matrix(1.002,0,0,0.953,0,0)"/>
+</svg>

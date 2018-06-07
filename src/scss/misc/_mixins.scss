@@ -32,5 +32,13 @@
 
 @mixin rem($size) {
   font-size: $size / $basic-font-size + rem;
-  line-height: 1;
+}
+
+@mixin font($weight) {
+  @if $weight == bold {
+    font-family: 'PT Sans Bold';
+  }
+  @if $weight == reg {
+    font-family: 'PT Sans Regular';
+  }
 }

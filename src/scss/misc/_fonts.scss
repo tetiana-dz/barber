@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'PT Sans Bold';
-  src: url('../fonts/ptsans/PT_Sans_narrow_bold.woff') format('woff'),
-       url('../fonts/ptsans/PT_Sans_narrow_bold.ttf') format('truetype');
+  src: url('../fonts/ptsans/ptsansnarrowbold.woff') format('woff'),
+       url('../fonts/ptsans/ptsansnarrowbold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PT Sans Regular';
-  src: url('../fonts/ptsans/PT_Sans_narrow_regular.woff') format('woff'),
-       url('../fonts/ptsans/PT_Sans_narrow_regular.ttf') format('truetype');
+  src: url('../fonts/ptsans/ptsansnarrow.woff') format('woff'),
+       url('../fonts/ptsans/ptsansnarrow.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

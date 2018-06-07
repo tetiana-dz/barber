@@ -1,0 +1,39 @@
+{%
+
+  set list = [
+    { count: '1 500', hint: 'рублей вложений', ref: true },
+    { count: '7 200', hint: 'секунд времени мастера', ref: false },
+    { count: '90 000', hint: 'постриженных волос', ref: false },
+    { count: '1 500', hint: 'лайков и комплиментов', ref: true }
+  ]
+  
+%}
+
+<div class="statistics">
+  <div class="statistics__header">
+    <h1 class="statistics__title">Стрижка у нас это выгодно!</h1>
+    <p class="statistics__descr">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+
+    <div class="statistics__ref statistics__ref--top">
+      <small>*</small> - приведенные данные ложь
+    </div>
+  </div>
+
+  <ul class="statistics__list">
+
+    {% for item in list %}
+      <li class="statistics__item">
+        <span class="statistics__count">
+          {{ item.count }} {% if item.ref == true %} <small>*</small> {% endif %}
+        </span>
+        <span class="statistics__hint">
+          {{ item.hint }}
+        </span>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="statistics__ref statistics__ref--bottom">
+    <small>*</small> - приведенные данные ложь
+  </div>
+</div>
