@@ -5,7 +5,7 @@ const browserSync = require('browser-sync');
 const plumber = require('gulp-plumber');
 
 gulp.task('scss', () => {
-  return gulp.src('src/scss/main.scss')
+  return gulp.src('src/main.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest('dist/css/'))
@@ -31,7 +31,7 @@ gulp.task('reload', () => {
 });
 
 gulp.task('watch', ['reload', 'scss', 'html'], () => {
-  gulp.watch('src/scss/**/*.scss', ['scss']);
-  gulp.watch(['src/views/*.html', 'src/components/**/*.html'], ['html'])
+  gulp.watch('src/**/*.scss', ['scss']);
+  gulp.watch(['src/**/*.html', 'src/components/**/*.html'], ['html'])
   gulp.watch('dist/*.html', browserSync.reload)
 });
