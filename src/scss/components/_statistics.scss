@@ -47,6 +47,7 @@
 .statistics__title {
   @include rem(30);
   @include font(bold);
+  font-weight: normal;
   color: #000;
   text-transform: uppercase;
   max-width: 185px;
